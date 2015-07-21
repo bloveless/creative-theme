@@ -1,4 +1,4 @@
-# This theme was adapted from [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/) for use in PyroCMS
+## This theme was adapted from [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/) for use in PyroCMS
 
 The README.md that come with Creative - Start Bootstrap is included below.
 

@@ -1,0 +1,15 @@
+{# jQuery #}
+{{ asset_add("scripts.js", "theme::plugins/jquery/jquery-1.11.3.js") }}
+
+{# Bootstrap Core JavaScript #}
+{{ asset_add("scripts.js", "theme::plugins/bootstrap/js/bootstrap.js") }}
+
+{# Plugin JavaScript #}
+{{ asset_add("scripts.js", "theme::plugins/jquery/jquery.easing.min.js") }}
+{{ asset_add("scripts.js", "theme::plugins/jquery/jquery.fittext.js") }}
+{{ asset_add("scripts.js", "theme::plugins/jquery/wow.min.js") }}
+
+{# Custom Theme JavaScript #}
+{{ asset_add("scripts.js", "theme::js/creative.js") }}
+
+{{ html_script(asset_path("scripts.js")) }}

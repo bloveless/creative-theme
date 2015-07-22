@@ -185,8 +185,17 @@ header {
             }
         }
     }
+
     @media (min-width: 768px) {
-        min-height: 100%;
+
+        &:not(.small) {
+            min-height: 100%;
+        }
+
+        &.small {
+            min-height: 50%;
+        }
+
         .header-content {
             position: absolute;
             top: 50%;

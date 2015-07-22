@@ -1,0 +1,47 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+    <header class="small">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Blog</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="post">
+
+        <div class="container">
+            <h2 class="section-heading">
+                {{ post.title }}
+            </h2>
+
+            <p>{{ post.entry.content.render|raw }}</p>
+
+            <div class="meta">
+
+            <span class="date">
+                {{ post.created_at|date(config_get('streams.date_format')) }}
+            </span>
+
+                {% if post.category_id %}
+                    <div class="category">
+                        {{ post.category.name }}
+                    </div>
+                {% endif %}
+
+                {% if post.tags %}
+                    <div class="tags">
+                        {% for tag in post.tags.value %}
+                            <div class="label label-info">{{ tag }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

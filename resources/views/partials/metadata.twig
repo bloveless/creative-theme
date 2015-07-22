@@ -24,6 +24,9 @@
 {{ asset_add("style.css", "theme::less/custom.less") }}
 
 {{ html_style(asset_path("style.css")) }}
+{% for style in asset_styles("styles.css") %}
+      {{ style|raw }}
+{% endfor %}
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -13,20 +13,17 @@
       rel='stylesheet' type='text/css'>
 
 {# Bootstrap Core CSS #}
-{{ asset_add("style.css", "theme::plugins/bootstrap/less/bootstrap.less") }}
+{{ asset_add("styles.css", "theme::plugins/bootstrap/less/bootstrap.less") }}
 {# Font Awesome #}
-{{ asset_add("style.css", "theme::plugins/font-awesome/less/font-awesome.less") }}
+{{ asset_add("styles.css", "theme::plugins/font-awesome/less/font-awesome.less") }}
 {# Plugin CSS #}
-{{ asset_add("style.css", "theme::css/animate.min.css") }}
+{{ asset_add("styles.css", "theme::css/animate.min.css") }}
 {# Custom CSS #}
-{{ asset_add("style.css", "theme::less/creative.less") }}
+{{ asset_add("styles.css", "theme::less/creative.less") }}
 {# Customization #}
-{{ asset_add("style.css", "theme::less/custom.less") }}
+{{ asset_add("styles.css", "theme::less/custom.less") }}
 
-{{ html_style(asset_path("style.css")) }}
-{% for style in asset_styles("styles.css") %}
-      {{ style|raw }}
-{% endfor %}
+{{ html_style(asset_path("styles.css")) }}
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

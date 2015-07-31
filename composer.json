@@ -5,6 +5,7 @@
 	  "name": "Brennon Loveless",
 	  "email": "brennon.loveless@gmail.com",
 	  "homepage": "thunderware.net"
+	}
   ],
   "autoload": {
     "psr-4": {
